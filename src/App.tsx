@@ -1,12 +1,16 @@
 import { Routes, Route } from 'react-router-dom';
 import { Main, Posts } from './pages';
+import { Nav } from './components'
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/posts" element={<Posts />} />
-    </Routes>
+    <>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/posts" element={<Posts />} />
+      </Routes>
+    </>
   );
 }
 
